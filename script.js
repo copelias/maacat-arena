@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // ===== UPDATES SYSTEM =====
   const updatesBox = document.getElementById("updatesBox");
 
-  // Placeholder updates (you can remove or replace later)
   const updates = [
     "Arena initialized.",
     "Rule Book forged.",
@@ -29,13 +28,27 @@ document.addEventListener("DOMContentLoaded", () => {
     updatesBox.appendChild(p);
   });
 
-  // ===== FUTURE EXPANSION HOOK =====
-  // Example:
-  // addUpdate("New challenger entered the Arena");
-
   window.addUpdate = function (text) {
     const p = document.createElement("p");
     p.textContent = text;
     updatesBox.appendChild(p);
   };
+
+  // ===== NAVBAR LINKS (optional console feedback) =====
+  const navLinks = document.querySelectorAll(".nav-links a");
+
+  navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      console.log(`🌐 Navigating to ${link.textContent}`);
+    });
+  });
+
+  // ===== FUTURE DROPDOWN HOOK =====
+  const networkTitle = document.querySelector(".nav-title");
+  if (networkTitle) {
+    networkTitle.addEventListener("click", () => {
+      console.log("🔽 MAACAT Network clicked (dropdown placeholder)");
+      // Here we could toggle a dropdown menu in the future
+    });
+  }
 });
