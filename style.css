@@ -23,6 +23,61 @@ body {
     line-height: 1.6;
 }
 
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    background-color: var(--beige);
+    border-bottom: 1px solid #ddd;
+    padding: 14px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo {
+    font-family: 'Cinzel', serif;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    color: var(--dark);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.nav-title {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0.6;
+    margin-right: 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--ink);
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--gold);
+}
+
+
 /* =========================
    HERO / INTRO
 ========================= */
