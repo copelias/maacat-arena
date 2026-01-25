@@ -156,6 +156,25 @@ tbody tr:hover {
     background-color: #f6f6f6;
 }
 
+
+/* =========================
+   ARENA TABLE SCROLL
+========================= */
+
+.arena-table table {
+    display: block;        /* permette scroll orizzontale */
+    max-height: 500px;     /* altezza massima prima di scroll verticale */
+    overflow-x: auto;      /* scroll orizzontale se necessario */
+    overflow-y: auto;      /* scroll verticale se altezza supera 500px */
+    white-space: nowrap;   /* evita che il contenuto vada a capo */
+}
+
+.arena-table th,
+.arena-table td {
+    min-width: 120px;      /* larghezza minima per ogni colonna */
+}
+
+
 /* =========================
    RULE BOOK
 ========================= */
