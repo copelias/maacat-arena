@@ -158,50 +158,42 @@ tbody tr:hover {
 
 
 /* =========================
-   ARENA TABLE SCROLL & STICKY HEADER
+   ARENA TABLE SCROLL & STICKY HEADER CORRETTO
 ========================= */
 
+.arena-table .table-wrapper {
+    max-height: 500px;        /* altezza massima della tabella prima dello scroll verticale */
+    overflow-y: auto;          /* scroll verticale */
+    overflow-x: auto;          /* scroll orizzontale */
+    border: 1px solid #ddd;
+}
+
 .arena-table table {
-    display: block;             /* permette scroll orizzontale e verticale */
-    max-height: 500px;          /* altezza massima prima di scroll verticale */
-    overflow-x: auto;           /* scroll orizzontale se necessario */
-    overflow-y: auto;           /* scroll verticale se altezza supera 500px */
     border-collapse: collapse;
     width: 100%;
-    white-space: nowrap;        /* evita che il contenuto vada a capo */
-}
-
-.arena-table thead {
-    display: table;
-    width: 100%;
-    table-layout: fixed;        /* le colonne si ridistribuiscono */
-    position: sticky;           /* sticky header */
-    top: 0;
-    background-color: #111;
-    color: #fff;
-    z-index: 10;
-}
-
-.arena-table tbody {
-    display: block;             /* tbody scrollabile separato dallad thead */
-    width: 100%;
-    max-height: 500px;          /* stessa altezza del container */
-    overflow-y: auto;           /* scroll verticale */
+    min-width: 360px;         /* forza larghezza minima della tabella */
 }
 
 .arena-table th,
 .arena-table td {
-    min-width: 120px;           /* larghezza minima per ogni colonna */
+    min-width: 120px;          /* larghezza minima di ogni colonna */
     padding: 14px;
     text-align: center;
     border: 1px solid #ddd;
     box-sizing: border-box;
 }
 
+.arena-table thead th {
+    background-color: #111;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
 .arena-table tbody tr:hover {
     background-color: #f6f6f6;
 }
-
 
 /* =========================
    RULE BOOK
