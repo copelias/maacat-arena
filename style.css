@@ -114,8 +114,9 @@ body {
     opacity: 0.85;
 }
 
+
 /* =========================
-   ARENA TABLE
+   ARENA TABLE SCROLL & STICKY HEADER
 ========================= */
 
 .arena-table {
@@ -131,36 +132,6 @@ body {
     text-align: center;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: white;
-    border: 1px solid #ddd;
-}
-
-th {
-    background-color: #111;
-    color: #fff;
-    font-weight: 400;
-    padding: 14px;
-    letter-spacing: 1px;
-}
-
-td {
-    padding: 14px;
-    border-top: 1px solid #eee;
-    text-align: center;
-}
-
-tbody tr:hover {
-    background-color: #f6f6f6;
-}
-
-
-/* =========================
-   ARENA TABLE SCROLL & STICKY HEADER CORRETTO
-========================= */
-
 .arena-table .table-wrapper {
     max-height: 500px;        /* altezza massima della tabella prima dello scroll verticale */
     overflow-y: auto;          /* scroll verticale */
@@ -172,6 +143,7 @@ tbody tr:hover {
     border-collapse: collapse;
     width: 100%;
     min-width: 360px;         /* forza larghezza minima della tabella */
+    table-layout: fixed;       /* forza le colonne a rispettare la larghezza dell'header */
 }
 
 .arena-table th,
@@ -194,7 +166,6 @@ tbody tr:hover {
 .arena-table tbody tr:hover {
     background-color: #f6f6f6;
 }
-
 /* =========================
    RULE BOOK
 ========================= */
