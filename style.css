@@ -114,7 +114,22 @@ body {
     opacity: 0.85;
 }
 
+.hero-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 28px;
+    background-color: var(--gold);
+    color: var(--dark);
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
 
+.hero-btn:hover {
+    background-color: #b28e3f; /* un oro leggermente più scuro */
+    transform: translateY(-2px);
+}
 /* =========================
    ARENA TABLE SCROLL & STICKY HEADER
 ========================= */
