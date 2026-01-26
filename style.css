@@ -118,22 +118,17 @@ body {
     display: inline-block;
     margin-top: 25px;
     padding: 14px 28px;
-    background-color: #c2a14a; /* oro antico */
-    color: #0f0f0f; /* testo scuro */
-    font-family: 'Cinzel', serif; /* font medievale */
+    background-color: var(--gold);
+    color: var(--dark);
     font-weight: 600;
     text-decoration: none;
-    border: 3px solid #3a2f1c; /* bordo marrone scuro */
-    border-radius: 6px;
-    box-shadow: inset 0 0 0 2px #e6dcc8, 0 4px 0 #3a2f1c; /* effetto rilievo */
-    transition: all 0.2s ease;
-    letter-spacing: 1px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .hero-btn:hover {
-    background-color: #b28e3f; /* oro più scuro */
+    background-color: #b28e3f; /* un oro leggermente più scuro */
     transform: translateY(-2px);
-    box-shadow: inset 0 0 0 2px #e6dcc8, 0 6px 0 #3a2f1c; /* effetto rilievo più alto */
 }
 /* =========================
    ARENA TABLE SCROLL & STICKY HEADER
