@@ -115,20 +115,43 @@ body {
 }
 
 .hero-btn {
-    display: inline-block;
-    margin-top: 25px;
-    padding: 14px 28px;
-    background-color: var(--gold);
-    color: var(--dark);
-    font-weight: 600;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+display: inline-block;
+margin-top: 25px;
+padding: 14px 28px;
+
+
+/* GOLD CHIARO */
+background: linear-gradient(135deg, #f7e7a9, #e8c96a);
+color: #3a2a00;
+
+
+font-weight: 600;
+text-decoration: none;
+border-radius: 10px;
+
+
+border: 1px solid #d4b24c;
+
+
+box-shadow:
+0 4px 8px rgba(0,0,0,0.15),
+inset 0 1px 0 rgba(255,255,255,0.6);
+
+
+transition: all 0.3s ease;
 }
 
+
 .hero-btn:hover {
-    background-color: #b28e3f; /* un oro leggermente più scuro */
-    transform: translateY(-2px);
+background: linear-gradient(135deg, #ffeebf, #f0d777);
+
+
+transform: translateY(-3px);
+
+
+box-shadow:
+0 6px 12px rgba(0,0,0,0.25),
+inset 0 1px 0 rgba(255,255,255,0.8);
 }
 /* =========================
    ARENA TABLE SCROLL & STICKY HEADER
