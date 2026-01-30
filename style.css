@@ -345,45 +345,53 @@ body {
 
 /* SHELF ROW */
 
+/* SHELF GRID */
+
 .magazine-shelf {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+
+    gap: 30px 28px;
+
+    padding: 10px 20px 40px;
+
+    margin-bottom: 60px;
+
     position: relative;
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 28px;
-
-    padding: 10px 20px 35px;
-    margin-bottom: 70px;
 }
 
 
-/* WOOD / IRON BAR */
+/* EACH ROW = SHELF */
 
-.magazine-shelf::after {
+.magazine-shelf::before {
     content: "";
 
     position: absolute;
-    bottom: 0;
     left: 0;
     right: 0;
-
-    height: 14px;
+    top: 0;
+    bottom: 0;
 
     background:
-        linear-gradient(
-            90deg,
-            #1b1b1b,
-            #333,
-            #1a1a1a
+        repeating-linear-gradient(
+            to bottom,
+
+            transparent,
+            transparent 185px,
+
+            #1b1b1b 185px,
+            #1b1b1b 199px,
+
+            transparent 199px,
+            transparent 230px
         );
 
-    border-radius: 3px;
+    pointer-events: none;
 
     box-shadow:
-        inset 0 2px 3px rgba(255,255,255,0.15),
-        inset 0 -3px 4px rgba(0,0,0,0.6),
-        0 5px 8px rgba(0,0,0,0.35);
+        inset 0 2px 2px rgba(255,255,255,0.08),
+        inset 0 -3px 4px rgba(0,0,0,0.5);
 }
 
 
