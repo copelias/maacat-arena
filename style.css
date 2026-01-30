@@ -302,6 +302,164 @@ body {
 
 
 
+/* =========================
+   MAACAT MAGAZINE
+========================= */
+
+.magazine {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* HEADER */
+
+.magazine-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.magazine-header h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    color: var(--dark);
+    margin-bottom: 12px;
+}
+
+.magazine-header p {
+    font-size: 1rem;
+    opacity: 0.75;
+}
+
+
+/* LIBRARY AREA */
+
+.magazine-library {
+    max-height: 700px;
+    overflow-y: auto;
+    padding: 20px 10px;
+}
+
+
+/* SHELF (WOOD) */
+
+.magazine-shelf {
+    position: relative;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 26px;
+
+    padding: 25px 20px 45px;
+    margin-bottom: 55px;
+
+    background: linear-gradient(
+        180deg,
+        #6b4a2b,
+        #4a321c
+    );
+
+    border-radius: 6px;
+
+    box-shadow:
+        inset 0 3px 5px rgba(255,255,255,0.15),
+        inset 0 -4px 6px rgba(0,0,0,0.4),
+        0 6px 12px rgba(0,0,0,0.2);
+}
+
+
+/* BOOK */
+
+.magazine-book {
+    width: 120px;
+    text-align: center;
+
+    transition: transform 0.3s ease;
+}
+
+.magazine-book:hover {
+    transform: translateY(-6px);
+}
+
+
+/* COVER */
+
+.magazine-book img {
+    width: 100%;
+    height: 170px;
+
+    object-fit: cover;
+
+    border-radius: 4px;
+
+    border: 1px solid #222;
+
+    box-shadow:
+        0 4px 8px rgba(0,0,0,0.35);
+}
+
+
+/* READ BUTTON */
+
+.magazine-book a {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 6px 14px;
+
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    text-decoration: none;
+
+    color: #3a2a00;
+
+    background: linear-gradient(135deg, #f7e7a9, #e8c96a);
+
+    border: 1px solid #d4b24c;
+    border-radius: 6px;
+
+    box-shadow:
+        0 2px 4px rgba(0,0,0,0.2),
+        inset 0 1px 0 rgba(255,255,255,0.5);
+
+    transition: all 0.25s ease;
+}
+
+.magazine-book a:hover {
+    background: linear-gradient(135deg, #ffeebf, #f0d777);
+    transform: translateY(-2px);
+}
+
+
+/* SCROLLBAR (CLEAN) */
+
+.magazine-library::-webkit-scrollbar {
+    width: 8px;
+}
+
+.magazine-library::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.25);
+    border-radius: 4px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .magazine-book {
+        width: 90px;
+    }
+
+    .magazine-book img {
+        height: 130px;
+    }
+
+}
 
 
 
